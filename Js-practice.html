@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerrting App</title>
+    <style> 
+        body {
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            padding-top: 50px;
+            transition: background-color 1s ease;
+        }
+        #greet {
+            font-size: 28px;
+            font-weight: bold;
+            padding: 10px;
+            border-radius: 10px;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <h1>Greetings Based on time </h1>
+    <p id="greet"></p>
+
+    <script>
+        //step 1 user name 
+        let name = "Samira";
+        let bgColor = "";
+        let textColor = "";
+
+        //step 2 get current hour
+        let hour = new Date().getHours();
+        
+        alert('the current hour is: ' + hour);
+
+        //step 3 decide greeting based on time 
+        let greeting = "";
+        if (hour < 12)  {
+            greeting = "🌞 Good Morning, " + "Samira" +  "!";
+            bgColor = "lightyellow";
+            textColor = "orange";
+        }else {
+            if (hour < 18) {
+                greeting = "🌤 Good Afternoon, " + "Samira" + "!";
+                bgColor = "lightblue";
+                textColor = "darkblue";
+            }else {
+                greeting = "🌙 Good Evening, " + "Samira" + "!";
+                
+                bgColor = "darkgray";
+                textColor = "white";
+            }
+        }
+
+        //step 4 show greeting on the page 
+        document.body.style.backgroundColor = bgColor;
+        document.getElementById("greet").style.color = textColor;
+        document.getElementById("greet").innerHTML = greeting;
+
+        document.getElementById('greet').innerHTML = greeting;
+
+        //step 5 Example loop 
+
+        
+        let message = "";
+        for (let b = 1; b <= 4; b++) {
+            message += "Time of the day: " + b + "<br>";
+        }
+        // show the loop message below greeting 
+        
+        document.getElementById('greet').innerHTML += "<br><br>" + message;
+
+    </script>
+</body>
+</html>

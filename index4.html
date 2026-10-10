@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Simple Example</title>
+</head>
+<body>
+    <h1 id="greet">Salaan</h1>
+    <button id="changeBtn">Bedel Qoraalka</button>
+
+    <script>
+        const heading = document.getElementById('greet');
+        const btn = document.getElementById('changeBtn');
+
+        function changeText() {
+            if (heading.textContent === 'Salaan') {
+              heading.textContent = 'Waxaad baranaysaa JS!😊';
+            }else {
+                heading.textContent = 'Salaan';
+            }
+            
+        }
+
+        btn.addEventListener('click', changeText);
+    </script>
+</body>
+</html>
