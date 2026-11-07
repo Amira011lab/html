@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Html Forms</title>
+  </head>
+  <body>
+    <h1>Registration Form</h1>
+    <p>Please fill in the information below</p>
+
+    <form action="#">
+      <fieldset>
+        <legend>Personal information</legend>
+        <br />
+        <label for="fullname">Fullname</label>
+        <input
+          type="text"
+          name="fullname"
+          id="fullname"
+          placeholder="Enter your fullname" required
+        />
+        <br />  <br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+        <br> <br>
+
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" name="phone" placeholder="Phone number"required>
+        <br> <br>
+
+        <label for="password">Password</label>
+        <input type="password" name="password" id="password" placeholder="password" required>
+<br> <br>
+        <label for="birthdate">Date of Birth</label>
+        <input type="date" name="birthdate" id="birthdate">
+      </fieldset>
+      <br> <br>
+
+      <fieldset>
+        <legend>Gender</legend> 
+        <input type="radio" name="gender" id="male" value="male">
+        <label for="male">Male</label>
+
+        <input type="radio" name="gender" id="female" value="female">
+        <label for="female">Female</label>
+
+
+      </fieldset>
+
+      <br>
+      <fieldset>
+        <legend>Your Interests</legend>
+
+        <input type="checkbox" name="interests" id="coding" value="coding">
+        <label for="coding">Coding</label>
+        <br>
+
+        <input type="checkbox" id="business" name="interests" value="business">
+        <label for="business">Business</label>
+        <br>
+
+        <input type="checkbox" name="interests" id="desing" value="design">
+        <label for="desing">Design</label>
+        <br>
+
+      </fieldset>
+
+      <fieldset>
+        <legend>Education</legend>
+
+        <label for="education">Choose your educational level</label>
+        <select name="education" id="education">
+            <option value="">Select an option</option>
+            <option value="high-school">High School</option>
+            <option value="diploma">Diploma</option>
+            <option value="degree">Bachelor's Degree</option>
+            <option value="master">Master's Degree</option>
+        </select>
+
+      </fieldset>
+      <br>
+
+      <fieldset>
+        <legend>Additional Information</legend>
+        <label for="message">Tell us about yourself:</label>
+        <br>
+
+        <textarea name="message" id="message" rows="5" cols="40" placeholder="Write something about yourself..."></textarea>
+        <br><br>
+
+        <label for="photo">Upload your photo:</label>
+        <br>
+        <input type="file" name="photo" id="photo">
+  
+      </fieldset>
+      <br>
+      <fieldset>
+        <legend>Preferences</legend>
+
+      <label for="age">Select your Age</label>
+      <br><br>
+      <input type="range" name="age" id="age" min="18" max="60" value="25" >
+      <br><br>
+
+      <label for="color">Choose your favourite colour:</label>
+      <br> <br>
+      <input type="color" name="favourite-color" id="color">
+      </fieldset>
+
+       <br> <br>
+
+       <fieldset>
+        <legend>More Information</legend>
+        <br>
+        <label for="url">Your website URL</label>
+        <br>
+        <input type="url" name="website" id="url" placeholder="https://example.com">
+        <br> <br>
+
+        <!-- <legend>Numbers:</legend> -->
+        
+        <label for="number">Entering Numbers</label>
+        <br>
+        <input type="number" name="entering numbers" id="number">
+        <br> <br>
+
+        <label for="search">Searching</label>
+        <br><br>
+        <input type="search" name="search" id="search">
+        
+       </fieldset>
+      <button type="submit">Register</button>
+      <button type="reset">Clear</button>
+    </form>
+    
+    <br>
+    <a href="https://www.google.com">Google</a>
+  </body>
+</html>
