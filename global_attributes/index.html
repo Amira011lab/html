@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Global Attributes Practice</title>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header id="main-header" class="header" title="Website header">
+        <h1>HTML Global Attributes Practice</h1>
+        <p lang="en" dir="ltr">Welcome to my HTML learning website.</p>
+    </header>
+
+
+    <!-- NAVIGATION -->
+    <nav id="navigation" class="nav">
+        <a href="#about" title="Go to about section">About</a>
+        <a href="#articles">Articles</a>
+        <a href="#forms">Forms</a>
+        <a href="#media">Media</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+
+    <!-- MAIN CONTENT -->
+    <main id="main-content" class="container">
+
+        <!-- ABOUT SECTION -->
+        <section id="about" class="about-section">
+
+            <h2 title="About this website">About Me</h2>
+
+            <p id="intro" class="paragraph" title="Introduction">
+                I am learning HTML to become a professional web developer.
+            </p>
+
+            <p contenteditable="true" spellcheck="true">
+                Click here to edit this paragraph.
+            </p>
+
+            <p translate="no">
+                Welcome to my personal website.
+            </p>
+
+            <p dir="rtl" lang="ar">
+                مرحبا بك في موقعي
+            </p>
+
+            <p dir="auto">
+                This paragraph automatically determines its text direction.
+            </p>
+
+            <p>
+                My favorite subject is
+                <span id="subject" class="highlight" title="Favorite subject">
+                    Web Development
+                </span>.
+            </p>
+
+            <p>
+                HTML stands for
+                <abbr title="HyperText Markup Language">HTML</abbr>.
+            </p>
+
+            <p>
+                This is <strong>important information</strong>.
+            </p>
+
+            <p>
+                This is <em>emphasized information</em>.
+            </p>
+
+            <p>
+                This is <mark>highlighted information</mark>.
+            </p>
+
+            <blockquote cite="https://developer.mozilla.org/">
+                Learning is a continuous journey.
+            </blockquote>
+
+        </section>
+
+
+        <!-- ARTICLES SECTION -->
+        <section id="articles" class="articles-section">
+
+            <h2>Latest Articles</h2>
+
+            <article id="article-one" class="article" title="First article">
+
+                <header>
+                    <h3>Why Learn HTML?</h3>
+
+                    <p>
+                        Published on
+                        <time datetime="2026-11-11">
+                            November 11, 2026
+                        </time>
+                    </p>
+                </header>
+
+                <p>
+                    HTML provides the structure of every web page.
+                </p>
+
+                <figure>
+                    <img src="https://placehold.co/400x200"
+                         alt="HTML learning illustration"
+                         width="400"
+                         height="200"
+                         title="HTML illustration"
+                         loading="lazy">
+
+                    <figcaption>
+                        Learning the foundation of web development.
+                    </figcaption>
+                </figure>
+
+                <footer>
+                    <p>Written by Amira.</p>
+                </footer>
+
+            </article>
+
+
+            <article id="article-two" class="article">
+
+                <h3>My Learning Goals</h3>
+
+                <p>
+                    I want to learn HTML, CSS, JavaScript and React.
+                </p>
+
+                <details>
+                    <summary>Read more about my goals</summary>
+
+                    <p>
+                        I also want to learn databases and Artificial Intelligence.
+                    </p>
+                </details>
+
+            </article>
+
+        </section>
+
+
+        <!-- LISTS SECTION -->
+        <section id="lists" class="lists-section">
+
+            <h2>My Skills</h2>
+
+            <ul id="skills-list" class="skills">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>React</li>
+            </ul>
+
+            <h3>Learning Steps</h3>
+
+            <ol start="1" reversed>
+                <li>Learn HTML</li>
+                <li>Learn CSS</li>
+                <li>Learn JavaScript</li>
+            </ol>
+
+        </section>
+
+
+        <!-- FORMS SECTION -->
+        <section id="forms" class="form-section">
+
+            <h2>Registration Form</h2>
+
+            <form action="#" method="get">
+
+                <fieldset>
+                    <legend>Personal Information</legend>
+
+                    <label for="username">Full Name:</label>
+
+                    <input type="text"
+                           id="username"
+                           name="username"
+                           class="form-input"
+                           placeholder="Enter your name"
+                           title="Enter your full name"
+                           autocomplete="name"
+                           required>
+
+                    <br><br>
+
+                    <label for="email">Email:</label>
+
+                    <input type="email"
+                           id="email"
+                           name="email"
+                           placeholder="Enter your email"
+                           autocomplete="email"
+                           inputmode="email"
+                           required>
+
+                    <br><br>
+
+                    <label for="password">Password:</label>
+
+                    <input type="password"
+                           id="password"
+                           name="password"
+                           minlength="6"
+                           required>
+
+                    <br><br>
+
+                    <label for="country">Country:</label>
+
+                    <select id="country" name="country">
+
+                        <option value="kenya">Kenya</option>
+                        <option value="somalia">Somalia</option>
+                        <option value="uganda">Uganda</option>
+
+                    </select>
+
+                    <br><br>
+
+                    <label for="message">Your Message:</label>
+
+                    <textarea id="message"
+                              name="message"
+                              rows="5"
+                              cols="30"
+                              placeholder="Write your message..."
+                              spellcheck="true"></textarea>
+
+                    <br><br>
+
+                    <button type="submit" title="Submit the form">
+                        Submit
+                    </button>
+
+                    <button type="reset">
+                        Reset
+                    </button>
+
+                </fieldset>
+
+            </form>
+
+        </section>
+
+
+        <!-- MEDIA SECTION -->
+        <section id="media" class="media-section">
+
+            <h2>Media Elements</h2>
+
+            <audio controls>
+                <source src="audio.mp3" type="audio/mpeg">
+                Your browser does not support audio.
+            </audio>
+
+            <br><br>
+
+            <video controls width="400" poster="video-image.jpg">
+                <source src="video.mp4" type="video/mp4">
+                Your browser does not support video.
+            </video>
+
+            <br><br>
+
+            <iframe src="https://example.com"
+                    title="Example website"
+                    width="400"
+                    height="200">
+            </iframe>
+
+        </section>
+
+
+        <!-- INTERACTIVE SECTION -->
+        <section id="interactive" class="interactive-section">
+
+            <h2>Interactive HTML Elements</h2>
+
+            <p contenteditable="true">
+                You can edit this text directly.
+            </p>
+
+            <details open>
+                <summary>What is semantic HTML?</summary>
+
+                <p>
+                    Semantic HTML uses meaningful elements to describe
+                    the structure and purpose of content.
+                </p>
+            </details>
+
+            <br>
+
+            <label for="progress">Learning Progress:</label>
+
+            <progress id="progress" value="70" max="100">
+                70%
+            </progress>
+
+            <br><br>
+
+            <label for="score">Your Score:</label>
+
+            <meter id="score" value="0.8">
+                80%
+            </meter>
+
+            <br><br>
+
+            <button id="my-button"
+                    class="button"
+                    accesskey="b"
+                    title="Example button">
+                Click Me
+            </button>
+
+        </section>
+
+
+        <!-- GLOBAL ATTRIBUTES SECTION -->
+        <section id="global-attributes" class="attributes-section">
+
+            <h2>More Global Attribute Examples</h2>
+
+            <p hidden>
+                This paragraph is hidden.
+            </p>
+
+            <p tabindex="0">
+                This paragraph can receive keyboard focus.
+            </p>
+
+            <p draggable="true">
+                Try dragging this paragraph.
+            </p>
+
+            <div inert>
+                <p>This content is temporarily inactive.</p>
+                <button>Inactive button</button>
+            </div>
+
+            <p id="product"
+               data-product-id="101"
+               data-price="250"
+               data-category="technology">
+
+                Product information.
+            </p>
+
+            <div itemscope
+                 itemtype="https://schema.org/Person">
+
+                <p itemprop="name">Amira</p>
+
+                <p itemprop="jobTitle">Web Developer</p>
+
+            </div>
+
+            <button popovertarget="my-popover">
+                Open Popover
+            </button>
+
+            <div id="my-popover" popover>
+                <p>This is a popover.</p>
+
+                <button popovertarget="my-popover"
+                        popovertargetaction="hide">
+                    Close
+                </button>
+            </div>
+
+        </section>
+
+
+        <!-- ASIDE -->
+        <aside id="sidebar" class="sidebar">
+
+            <h2>Useful Resources</h2>
+
+            <ul>
+                <li>
+                    <a href="https://developer.mozilla.org/">
+                        MDN Web Docs
+                    </a>
+                </li>
+
+                <li>
+                    <a href="https://www.w3schools.com/">
+                        W3Schools
+                    </a>
+                </li>
+
+                <li>
+                    <a href="https://html.spec.whatwg.org/">
+                        HTML Living Standard
+                    </a>
+                </li>
+            </ul>
+
+        </aside>
+
+
+        <!-- CONTACT -->
+        <section id="contact" class="contact-section">
+
+            <h2>Contact Me</h2>
+
+            <address>
+                Email: example@email.com
+                <br>
+                Location: Nairobi, Kenya
+            </address>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer id="main-footer" class="footer">
+
+        <p>&copy; 2026 My HTML Practice Website.</p>
+
+    </footer>
+
+</body>
+</html>

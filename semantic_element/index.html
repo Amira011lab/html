@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Blog</title>
+
+    <style>
+        /* General styling */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f6f9;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Header */
+        header {
+            background-color: #243b55;
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin-bottom: 10px;
+        }
+
+        /* Navigation */
+        nav {
+            background-color: #141e30;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 20px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #f4b942;
+        }
+
+        /* Main layout */
+        .container {
+            display: grid;
+            grid-template-columns: 1fr 2.5fr 1fr;
+            gap: 20px;
+            max-width: 1200px;
+            margin: 30px auto;
+            padding: 0 20px;
+        }
+
+        /* Sidebars */
+        aside {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            height: fit-content;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+        }
+
+        aside h2 {
+            color: #243b55;
+            margin-bottom: 15px;
+        }
+
+        aside ul {
+            padding-left: 20px;
+        }
+
+        aside li {
+            margin-bottom: 10px;
+        }
+
+        /* Main content */
+        main {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        section, article {
+            background-color: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+        }
+
+        section h2, article h2 {
+            color: #243b55;
+            margin-bottom: 15px;
+        }
+
+        article header {
+            background: none;
+            color: #333;
+            text-align: left;
+            padding: 0;
+            margin-bottom: 10px;
+        }
+
+        article header h3 {
+            color: #243b55;
+        }
+
+        article footer {
+            margin-top: 15px;
+            color: #777;
+        }
+
+        /* Image */
+        figure {
+            margin-top: 20px;
+        }
+
+        figure img {
+            width: 100%;
+            border-radius: 8px;
+        }
+
+        figcaption {
+            color: #777;
+            font-size: 14px;
+            margin-top: 5px;
+        }
+
+        /* Details */
+        details {
+            margin-top: 15px;
+            padding: 12px;
+            background-color: #f4f6f9;
+            border-radius: 5px;
+        }
+
+        summary {
+            cursor: pointer;
+            font-weight: bold;
+            color: #243b55;
+        }
+
+        /* Footer */
+        body > footer {
+            background-color: #141e30;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 30px;
+        }
+
+        /* Responsive design */
+        @media (max-width: 800px) {
+            .container {
+                grid-template-columns: 1fr;
+            }
+
+            nav a {
+                display: inline-block;
+                margin: 5px 10px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>My Personal Blog</h1>
+        <p>Learning, Technology & Personal Growth</p>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#articles">Articles</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <!-- Three-column layout -->
+    <div class="container">
+
+        <!-- Left Sidebar -->
+        <aside>
+            <h2>Categories</h2>
+            <ul>
+                <li>Technology</li>
+                <li>Web Development</li>
+                <li>Education</li>
+                <li>Personal Growth</li>
+            </ul>
+
+            <h2 style="margin-top: 25px;">Useful Links</h2>
+            <ul>
+                <li><a href="https://developer.mozilla.org/">MDN</a></li>
+                <li><a href="https://github.com/">GitHub</a></li>
+                <li><a href="https://www.w3schools.com/">W3Schools</a></li>
+            </ul>
+        </aside>
+
+        <!-- Main Content -->
+        <main>
+
+            <section id="home">
+                <h2>Welcome!</h2>
+                <p>Welcome to my personal blog. Here I share my learning journey,
+                    technology interests and personal experiences.</p>
+            </section>
+
+            <section id="about">
+                <h2>About Me</h2>
+                <p>I am a beginner web developer learning HTML, CSS and JavaScript.</p>
+
+                <figure>
+                    <img src="https://placehold.co/600x250" alt="Learning and technology">
+                    <figcaption>My journey into web development.</figcaption>
+                </figure>
+            </section>
+
+            <section id="articles">
+                <h2>Latest Articles</h2>
+
+                <article>
+                    <header>
+                        <h3>Why Learn HTML?</h3>
+                        <p>Published on
+                            <time datetime="2026-11-11">November 11, 2026</time>
+                        </p>
+                    </header>
+
+                    <p>HTML is the foundation of every website. It helps us
+                        structure web pages and organize content.</p>
+
+                    <footer>
+                        <p>Written by Amira</p>
+                    </footer>
+                </article>
+
+                <article style="margin-top: 20px;">
+                    <h3>My Learning Goals</h3>
+                    <p>I want to become a professional web developer.</p>
+
+                    <details>
+                        <summary>Read more</summary>
+                        <p>My goals include learning HTML, CSS, JavaScript,
+                            React and eventually Artificial Intelligence.</p>
+                    </details>
+                </article>
+
+            </section>
+
+            <section id="contact">
+                <h2>Contact Me</h2>
+                <address>
+                    Email: example@email.com<br>
+                    Location: Nairobi, Kenya
+                </address>
+            </section>
+
+        </main>
+
+        <!-- Right Sidebar -->
+        <aside>
+            <h2>Quick Tips</h2>
+            <p>Practice coding every day to improve your skills.</p>
+
+            <h2 style="margin-top: 25px;">Recent Posts</h2>
+            <ul>
+                <li>Getting Started with HTML</li>
+                <li>Understanding CSS Grid</li>
+                <li>My JavaScript Journey</li>
+            </ul>
+        </aside>
+
+    </div>
+ 
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 My Personal Blog. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
